@@ -159,7 +159,7 @@ var beepbox = (function (exports) {
     ]);
     Config.effectsNames = ["none", "reverb", "chorus", "chorus & reverb"];
     Config.volumeRange = 16;
-    Config.volumeLogScale = -1;
+    Config.volumeLogScale = -0.5;
     Config.panCenter = 8;
     Config.panMax = Config.panCenter * 2;
     Config.chords = toNameMap([
