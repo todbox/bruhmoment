@@ -22,6 +22,17 @@ var beepbox = (function (exports) {
     OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
     SOFTWARE.
     */
+var scale2nd = true;
+var scale3rd = true;
+var scale4th = true;
+var scale5th = false;
+var scale6th = false
+var scale7th = true;
+var scale8th = true;
+var scale9th = true;
+var scale10th = true;
+var scale11th = true;
+var scale12th = true;
     class Config {
     }
     Config.scales = toNameMap([
@@ -45,7 +56,7 @@ var beepbox = (function (exports) {
 	{ name: "Dumb", realName: "Originally named, currently named, and will always be named 'dumb.'", flags: [true, false, false, false, false, true, true, true, true, false, false, true] },
         { name: "Whole Tone", realName: "The 'whole tone' scale is built entirely of tritones, making for some slightly unpleasant sounds. Only use if you know what you're doing!", flags: [true, false, true, false, true, false, true, false, true, false, true, false] },
         { name: "Rythmic", realName: "Pretty straightforward.", flags: [true, false, false, false, false, false, false, false, false, false, false, false] },
-        { name: "Custom Scale...", realName: "...", flags: [true, false, true, true, false, true, true, true, true, true, true, false] },
+        { name: "Custom Scale...", realName: "...", flags: [true, var scale2nd, var scale3rd, var scale4th, var scale5th, var scale6th, var scale7th, var scale8th, var scale9th, var scale10th, var scale11th, var scale12th] },
     ]);
     Config.keys = toNameMap([
         { name: "C", isWhiteKey: true, basePitch: 12 },
