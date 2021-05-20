@@ -15782,6 +15782,5 @@ var scale12th = true;
     return exports;
 
 
-console.log("fuck");
 }({}));
 //# sourceMappingURL=beepbox_editor.js.map
