@@ -56,7 +56,7 @@ var scale12th = true;
 	{ name: "Dumb", realName: "Originally named, currently named, and will always be named 'dumb.'", flags: [true, false, false, false, false, true, true, true, true, false, false, true] },
         { name: "Whole Tone", realName: "The 'whole tone' scale is built entirely of tritones, making for some slightly unpleasant sounds. Only use if you know what you're doing!", flags: [true, false, true, false, true, false, true, false, true, false, true, false] },
         { name: "Rythmic", realName: "Pretty straightforward.", flags: [true, false, false, false, false, false, false, false, false, false, false, false] },
-        { name: "Custom Scale...", realName: "...", flags: [true, var scale2nd, var scale3rd, var scale4th, var scale5th, var scale6th, var scale7th, var scale8th, var scale9th, var scale10th, var scale11th, var scale12th] },
+        { name: "Custom Scale...", realName: "...", flags: [true, scale2nd, scale3rd, scale4th, scale5th, scale6th, scale7th, scale8th, scale9th, scale10th, scale11th, scale12th] },
     ]);
     Config.keys = toNameMap([
         { name: "C", isWhiteKey: true, basePitch: 12 },
@@ -15781,5 +15781,7 @@ var scale12th = true;
 
     return exports;
 
+
+console.log("fuck");
 }({}));
 //# sourceMappingURL=beepbox_editor.js.map
