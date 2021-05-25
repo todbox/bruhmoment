@@ -129,6 +129,7 @@ var scale12th = true;
         { name: "metallic", volume: 1.5, basePitch: 96, pitchFilterMult: 1024.0, isSoft: false, samples: null },
         { name: "cutter", volume: 0.05, basePitch: 96, pitchFilterMult: 1024.0, isSoft: false, samples: null },
 	{ name: "harsh", volume: 0.3, basePitch: 80, pitchFilterMult: 1024.0, isSoft: false, samples: null },
+        { name: "test", volume: 0.25, basePitch: 69, pitchFilterMult: 1024.0, isSoft: false, samples: null },
     ]);
     Config.filterCutoffMaxHz = 8000;
     Config.filterCutoffMinHz = 1;
@@ -405,6 +406,11 @@ var scale12th = true;
                         newBuffer += 20 << 2;
                     }
                     drumBuffer = newBuffer;
+                }
+            }
+            else if (index == 8) {
+                for (let i = 0; i < Config.chipNoiseLength; i++) {
+                    wave[i] = 23.14159;
                 }
             }
             else {
