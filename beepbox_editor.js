@@ -409,9 +409,10 @@ var scale12th = true;
                 }
             }
             else if (index == 8) {
-                for (let i = 0; i < Config.chipNoiseLength; i++) {
-                    wave[i] = 23.14159;
-                }
+                drawNoiseSpectrum(wave, 1, 7, 12, 5, 0);
+                drawNoiseSpectrum(wave, 11, 2, .6578, .6578, 0);
+                inverseRealFourierTransform(wave, Config.chipNoiseLength);
+                scaleElementsByFactor(wave, 1.0 / Math.sqrt(Config.chipNoiseLength));
             }
             else {
                 throw new Error("Unrecognized drum index: " + index);
