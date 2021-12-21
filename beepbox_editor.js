@@ -4959,7 +4959,7 @@ var scale12th = true;
 -0.99191,
 -0.99091,
 -0.99167,
--0.99142]) }
+-0.99142]) },
        // The "modbox viola" wave needs changes as it sounds different due to the fact that newer Beepbox versions have anti-aliazing
        // Most of the buzzing can be fixed by changing the filter settings, though; https://tinyurl.com/yhwhcegw
     ]);
