@@ -3960,7 +3960,7 @@ var scale12th = true;
 -0.29193,
 -0.31750,
 -0.34790]) },
-{ name: "real snare", volume 1.0, samples: centerAndNormalizeWave([0.00000,
+{ name: "real snare", volume: 1.0, samples: centerAndNormalizeWave([0.00000,
 -0.01208,
 -0.02997,
 -0.04382,
